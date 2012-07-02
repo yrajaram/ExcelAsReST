@@ -147,6 +147,6 @@ public class ExcelImpl implements Excel{
 		if (type == CellType.NUMBER) {
 			System.out.println("I got a number " + cell.getContents());
 		}
-		data.put("R"+i+" C"+j, cell.getContents());
+		data.put(sheet.getName()+" R"+i+" C"+j, cell.getContents());
 	}
 }
